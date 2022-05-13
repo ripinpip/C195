@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="706.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddCustomerPageController">
+   <children>
+      <Text layoutX="280.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Customer">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="customerNameTextField" layoutX="381.0" layoutY="111.0" />
+      <TextField fx:id="customerAddressTextField" layoutX="381.0" layoutY="157.0" />
+      <TextField fx:id="customerPostalCodeTextField" layoutX="381.0" layoutY="205.0" />
+      <TextField fx:id="customerPhoneTextField" layoutX="381.0" layoutY="252.0" />
+      <Label layoutX="229.0" layoutY="115.0" text="Customer Name" />
+      <Label layoutX="229.0" layoutY="161.0" text="Customer Address" />
+      <Label layoutX="229.0" layoutY="209.0" text="Customer Postal Code" />
+      <Label layoutX="229.0" layoutY="256.0" text="Customer Phone Number" />
+      <ComboBox fx:id="countryComboBox" layoutX="381.0" layoutY="300.0" onAction="#ChangeComboBoxOptions" prefWidth="150.0" />
+      <Label layoutX="229.0" layoutY="304.0" text="Country" />
+      <ComboBox fx:id="firstLevelDivisionComboBox" layoutX="381.0" layoutY="345.0" prefWidth="150.0" />
+      <Label layoutX="229.0" layoutY="349.0" text="First-level Division" />
+      <Button layoutX="381.0" layoutY="462.0" mnemonicParsing="false" onAction="#OnAddClicked" text="Add" />
+      <Button layoutX="430.0" layoutY="462.0" mnemonicParsing="false" onAction="#OnCancelClicked" text="Cancel" />
+   </children>
+</AnchorPane>

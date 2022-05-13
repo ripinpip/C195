@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="706.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UpdateAppointmentPageController">
+    <children>
+        <Text layoutX="253.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Appointment" wrappingWidth="304.0439453125">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Text>
+        <TextField fx:id="titleTextField" layoutX="381.0" layoutY="111.0" />
+        <TextField fx:id="descriptionTextField" layoutX="381.0" layoutY="157.0" prefHeight="25.0" prefWidth="293.0" />
+        <TextField fx:id="locationTextField" layoutX="381.0" layoutY="205.0" />
+        <TextField fx:id="typeTextField" layoutX="381.0" layoutY="300.0" />
+        <ComboBox fx:id="contactComboBox" layoutX="381.0" layoutY="252.0" prefWidth="150.0" />
+        <Label layoutX="104.0" layoutY="395.0" text="End Date and Time" />
+        <Label layoutX="227.0" layoutY="439.0" text="Customer ID" />
+        <Label layoutX="227.0" layoutY="482.0" text="User ID" />
+        <Label layoutX="229.0" layoutY="115.0" text="Title" />
+        <Label layoutX="229.0" layoutY="161.0" text="Description" />
+        <Label layoutX="229.0" layoutY="209.0" text="Location" />
+        <Label layoutX="229.0" layoutY="256.0" text="Contact" />
+        <Label layoutX="229.0" layoutY="304.0" text="Type" />
+        <Label layoutX="99.0" layoutY="349.0" text="Start Date and Time" />
+        <DatePicker fx:id="startDatePicker" editable="false" layoutX="214.0" layoutY="345.0" showWeekNumbers="true" />
+        <DatePicker fx:id="endDatePicker" editable="false" layoutX="214.0" layoutY="391.0" showWeekNumbers="true" />
+        <ComboBox fx:id="startTimeComboBox" layoutX="407.0" layoutY="345.0" prefWidth="150.0" />
+        <ComboBox fx:id="endTimeComboBox" layoutX="407.0" layoutY="391.0" prefWidth="150.0" />
+        <Label layoutX="577.0" layoutY="349.0" text="(Local Time)" />
+        <Label layoutX="577.0" layoutY="395.0" text="(Local Time)" />
+        <ComboBox fx:id="customerIdComboBox" layoutX="381.0" layoutY="435.0" prefWidth="150.0" />
+        <ComboBox fx:id="userIdComboBox" layoutX="381.0" layoutY="478.0" prefWidth="150.0" />
+        <Button layoutX="381.0" layoutY="583.0" mnemonicParsing="false" onAction="#OnUpdateClicked" text="Update" />
+        <Button layoutX="442.0" layoutY="583.0" mnemonicParsing="false" onAction="#OnCancelClicked" prefHeight="25.0" prefWidth="55.0" text="Cancel" />
+    </children>
+</AnchorPane>
